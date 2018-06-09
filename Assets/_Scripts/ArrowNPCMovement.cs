@@ -1,13 +1,14 @@
 using UnityEngine;
-using System.Collections;
+using UnityEngine.AI;
 
-public class ArrowNPCMovement : MonoBehaviour {
+public class ArrowNPCMovement : MonoBehaviour 
+{
 	public GameObject targetGo;
-	private UnityEngine.AI.NavMeshAgent navMeshAgent;
+	private NavMeshAgent navMeshAgent;
 	
 	void Start()
 	{
-		navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+		navMeshAgent = GetComponent<NavMeshAgent>();
 	}
 
 	private void Update()
