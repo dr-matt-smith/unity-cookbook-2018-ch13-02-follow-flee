@@ -18,8 +18,8 @@ public class ArrowNPCMovement : MonoBehaviour
 
 	private void HeadForDestintation ()
 	{
-		Vector3 destinaton = targetGo.transform.position;
-		navMeshAgent.SetDestination (destinaton);
+		Vector3 destination = targetGo.transform.position;
+		navMeshAgent.SetDestination (destination);
 		
 		// show yellow line from source to target
 		UsefulFunctions.DebugRay(transform.position, destinaton, Color.yellow);
